@@ -10,6 +10,8 @@
 
 [Try it now: @telescope_one_bot](https://t.me/telescope_one_bot)
 
+![Demo](assets/demo.gif)
+
 ------
 
 ## What is this?
@@ -27,16 +29,28 @@ Set it up once - never miss a relevant post again
 
 ------
 
-## Features
+- ## Features
 
-- 🔔 **Real-time monitoring** - new posts checked every minute
-- 🔑 **Smart keyword matching**
-  - Single word -> prefix match (`football` matches `footballer`)
-  - Number  -> exact match (`2026` won't match `20261`)
-  - Phrase -> full phrase match (`rent apartment`)
-- 📡 **Multiple input formats** - add channels by `@username`, `t.me/` link, or web Telegram URL
-- 🌐 **Two languages** - English and Russian (`/language`)
-- 🗑️ **Full data deletion** - `/deletedata` removes everything, no questions asked
+  - 🔔 **Real-time monitoring** - new posts checked every minute
+
+  - 🔑 **Smart keyword matching**
+    - Single word -> prefix match (`football` matches `footballer`)
+    - Number -> exact match (`2026` won't match `20261`)
+    - Phrase -> full phrase match (`rent apartment`)
+
+  - 📡 **Multiple input formats** - add channels by `@username`, `t.me/` link, or web Telegram URL
+
+    ![Add channel](assets/add_chanel.gif)
+
+  - 🔑 **Keyword management** - add, view, and remove keywords on the fly
+
+    ![Add keywords](assets/add_keywords.gif)
+
+  - 🌐 **Two languages** - English and Russian
+
+    ![Language switch](assets/language_change.gif)
+
+  - 🗑️ **Full data deletion** - `/deletedata` removes everything, no questions asked
 
 ------
 
@@ -49,7 +63,7 @@ Set it up once - never miss a relevant post again
 | Check interval              | Every minute | Priority                |
 | Per-channel keyword filters | —            | ✓                       |
 | Advanced search filters     | —            | ✓                       |
-| Webhooks                    | —            | ✓                       |
+| API and Webhooks            | —            | ✓                       |
 
 ------
 
