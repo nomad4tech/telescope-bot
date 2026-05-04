@@ -2,7 +2,11 @@
 
 **Monitor public Telegram channels for keywords. Get notified instantly.**
 
-[![Telegram](../typora/assets/Telegram-@telescope__one__bot-2CA5E0.svg)](https://t.me/telescope_one_bot) [![Java](../typora/assets/Java-17+-ED8B00.svg)](https://openjdk.org/) [![Spring Boot](../typora/assets/Spring Boot-3.svg)](https://spring.io/projects/spring-boot) [![telegrambot4j](../typora/assets/lib-telegrambot4j-blue.svg)](https://github.com/nomad4tech/telegrambot4j) [![Status](../typora/assets/status-live-brightgreen.svg)](https://claude.ai/chat/2386d23f-8157-4e6c-9f7b-2c12370558e4)
+[![Telegram](https://img.shields.io/badge/Telegram-@telescope__one__bot-2CA5E0?style=flat&logo=telegram)](https://t.me/telescope_one_bot)
+[![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=flat&logo=openjdk)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=flat&logo=springboot)](https://spring.io/projects/spring-boot)
+[![telegrambot4j](https://img.shields.io/badge/lib-telegrambot4j-blue?style=flat)](https://github.com/nomad4tech/telegrambot4j)
+[![Status](https://img.shields.io/badge/status-live-brightgreen?style=flat)]()
 
 [Try it now: @telescope_one_bot](https://t.me/telescope_one_bot)
 
