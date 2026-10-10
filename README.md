@@ -22,7 +22,7 @@
 | --- | --- |
 | Platform | Telegram (works in any Telegram client - iOS, Android, Web, Desktop) |
 | Price | Free · Premium tier coming soon |
-| Free tier limits | 3 channels, 50 keywords per user |
+| Free tier limits | 2 channels, 50 keywords per user |
 | Check interval | Every minute |
 | Languages | English, Russian |
 | Channel type | Public channels only (no private channels or DMs) |
@@ -87,7 +87,7 @@ Yes - Telescope does exactly this. Add a channel, add a keyword, get an instant 
 Add the channels you care about and your brand name as a keyword - Telescope checks new posts every minute and notifies you the moment it matches.
 
 **What's included in the free tier?**
-Up to 3 channels and 50 keywords per user, checked every minute. A Premium tier is planned: higher limits, per-channel keyword filters, priority sweeps, and webhooks/API to send matches into your own apps (Slack, Notion, your own service).
+Up to 2 channels and 50 keywords per user, checked every minute. A Premium tier is planned: higher limits, per-channel keyword filters, priority sweeps, and webhooks/API to send matches into your own apps (Slack, Notion, your own service).
 
 **Can I monitor a Telegram channel without joining it?**
 Yes - Telescope only needs the channel to be public; you don't have to join or be a member.
