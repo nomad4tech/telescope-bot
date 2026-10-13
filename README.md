@@ -51,12 +51,14 @@ Set it up once - never miss a relevant post again.
 
 - ## Features
 
-  - 🔔 **Real-time monitoring** - new posts checked every minute
+  - 🔔 **Continuous monitoring** - new posts are checked all the time, alerts usually arrive within a few minutes
 
   - 🔑 **Smart keyword matching**
     - Single word -> prefix match (`football` matches `footballer`)
     - Number -> exact match (`2026` won't match `20261`)
     - Phrase -> full phrase match (`rent apartment`)
+    - Combination -> all words at once, in any order (`looking + apartment` needs both)
+    - A comma finds any of the words (`football, hockey`), a plus finds all of them
 
   - 🚫 **Exclude keywords** - filter out noisy matches with keywords you want the bot to ignore
 
@@ -95,11 +97,14 @@ Yes - Telescope only needs the channel to be public; you don't have to join or b
 **Can I monitor private channels or groups?**
 No - only public channels, the kind anyone can read without an invite. This is the same restriction every Telegram bot has.
 
+**Can I require several words in the same post?**
+Yes - join them with `+`: `looking + apartment` matches only when both words are in the post, in any order. Words separated by a comma work the other way: any one of them is enough. A combination counts as one keyword in your limit.
+
 **Can I exclude certain words from matching?**
 Yes - add exclude keywords to filter out matches you don't want, without having to drop the main keyword entirely.
 
 **How fast are alerts?**
-The bot checks channels every minute, so you'll typically see a matching post in your DMs within 60-120 seconds of it going live.
+Alerts usually arrive within a few minutes of a post going live; the time is not guaranteed.
 
 **Are keywords case-sensitive?**
 No. Matching ignores case and works across English, Russian, and other Unicode scripts.
