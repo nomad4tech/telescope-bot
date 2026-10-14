@@ -21,10 +21,10 @@
 | | |
 | --- | --- |
 | Platform | Telegram (works in any Telegram client - iOS, Android, Web, Desktop) |
-| Price | Free · Premium tier coming soon |
+| Price | Free · Pro demo on request (paid plans later) |
 | Free tier limits | 2 channels, 50 keywords per user |
-| Check interval | Every minute |
-| Languages | English, Russian |
+| Alerts | Usually within a few minutes; Pro is faster |
+| Languages | English, Russian, Ukrainian |
 | Channel type | Public channels only (no private channels or DMs) |
 | Data stored | Telegram user ID, your channel list, your keywords - no message content |
 
@@ -60,17 +60,19 @@ Set it up once - never miss a relevant post again.
     - Combination -> all words at once, in any order (`looking + apartment` needs both)
     - A comma finds any of the words (`football, hockey`), a plus finds all of them
 
-  - 🚫 **Exclude keywords** - filter out noisy matches with keywords you want the bot to ignore
+  - 🚫 **Exclude keywords** - put `-` or `!` before a word (`-football`) to skip posts that contain it, even if another keyword matched
 
   - 📡 **Multiple input formats** - add channels by `@username`, `t.me/` link, or web Telegram URL
 
     ![Add channel](assets/add_chanel.gif)
 
-  - 🔑 **Keyword management** - add, view, and remove keywords on the fly
+  - 🔑 **Keyword management** - add, view, and remove keywords on the fly; a combination like `looking + apartment` counts as one keyword
+
+  - 🖥️ **Personal cabinet** *(Pro demo)* - a web page with your feed, statistics, channels, keywords and export; open it with `/cabinet`
 
     ![Add keywords](assets/add_keywords.gif)
 
-  - 🌐 **Two languages** - English and Russian
+  - 🌐 **Three languages** - English, Russian and Ukrainian
 
     ![Language switch](assets/language_change.gif)
 
@@ -86,10 +88,10 @@ Set it up once - never miss a relevant post again.
 Yes - Telescope does exactly this. Add a channel, add a keyword, get an instant notification when it matches.
 
 **How do I track mentions of my brand or product on Telegram?**
-Add the channels you care about and your brand name as a keyword - Telescope checks new posts every minute and notifies you the moment it matches.
+Add the channels you care about and your brand name as a keyword - Telescope keeps checking new posts and notifies you as soon as one matches.
 
 **What's included in the free tier?**
-Up to 2 channels and 50 keywords per user, checked every minute. A Premium tier is planned: higher limits, per-channel keyword filters, priority sweeps, and webhooks/API to send matches into your own apps (Slack, Notion, your own service).
+Up to 2 channels and 50 keywords per user, alerts usually within a few minutes. Pro is available as a free demo on request in the bot: up to 5 channels, unlimited keywords, regular expressions, faster delivery and a personal web cabinet with feed, statistics and export. Paid plans, including integrations with your own apps (Slack, Notion, your own service), will come later.
 
 **Can I monitor a Telegram channel without joining it?**
 Yes - Telescope only needs the channel to be public; you don't have to join or be a member.
@@ -104,7 +106,7 @@ Yes - join them with `+`: `looking + apartment` matches only when both words are
 Yes - add exclude keywords to filter out matches you don't want, without having to drop the main keyword entirely.
 
 **How fast are alerts?**
-Alerts usually arrive within a few minutes of a post going live; the time is not guaranteed.
+Alerts usually arrive within a few minutes of a post going live, and Pro is faster; the time is not guaranteed.
 
 **Are keywords case-sensitive?**
 No. Matching ignores case and works across English, Russian, and other Unicode scripts.
@@ -122,13 +124,14 @@ Yes - any use case where you want an instant alert on a keyword in a public chan
 
 ## Plans
 
-|                             | Free         | Premium *(coming soon)* |
-| --------------------------- | ------------ | ------------------------ |
-| Channels                    | 3            | More                    |
-| Keywords                    | 50           | More                    |
-| Check interval              | Every minute | Priority                |
-| Per-channel keyword filters | —            | ✓                        |
-| Webhooks / API              | —            | ✓                        |
+|                                     | Free                         | Pro *(demo on request)* | Ultimate *(coming soon)* |
+| ----------------------------------- | ---------------------------- | ----------------------- | ------------------------ |
+| Channels                            | 2                            | 5                       | More                     |
+| Keywords                            | 50                           | Unlimited               | Unlimited                |
+| Alerts                              | Usually within a few minutes | Faster                  | Faster                   |
+| Regular expressions                 | —                            | ✓                       | ✓                        |
+| Cabinet: feed, statistics, export   | Basic                        | ✓                       | ✓                        |
+| Integrations (webhooks, your apps)  | —                            | —                       | ✓                        |
 
 ------
 
@@ -138,14 +141,20 @@ Yes - any use case where you want an instant alert on a keyword in a public chan
 | ------------- | ------------------------ |
 | `/start`      | Main menu                |
 | `/help`       | Guide and keyword syntax |
-| `/language`   | Switch language (ru/en)  |
+| `/language`   | Switch language (ru/uk/en) |
 | `/deletedata` | Delete all your data     |
+| `/cabinet`    | Personal cabinet link (Pro demo) |
 
 ------
 
 ## What's new
 
-Changes are tracked in [CHANGELOG.md](CHANGELOG.md). A shorter, user-facing version of the same updates is also shown on the [website](https://nomad4.tech/telescope).
+- **2026-10-14** - Word combinations: join words with `+` to catch only posts that contain all of them (`looking + apartment`). A comma still means any of the words. A combination counts as one keyword.
+- **2026-10-13** - Alerts show who wrote the message (the name links to the profile when it is public) and the channel title is a link to the channel.
+- **2026-10-10** - Free plan: 2 channels and 50 keywords.
+- **2026-10-07** - Personal web cabinet (feed, statistics, channels, keywords, export) and the Pro demo on request; the bot and the cabinet speak Ukrainian too.
+
+The same list, with older entries, is in the Updates section of the [website](https://nomad4.tech/telescope).
 
 ------
 
