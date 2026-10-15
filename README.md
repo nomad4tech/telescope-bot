@@ -149,6 +149,7 @@ Yes - any use case where you want an instant alert on a keyword in a public chan
 
 ## What's new
 
+- **2026-10-15** - The word that triggered an alert is underlined in the text. A channel we cannot read under Telegram rules or the law is marked "not served" in the bot and the cabinet.
 - **2026-10-14** - Word combinations: join words with `+` to catch only posts that contain all of them (`looking + apartment`). A comma still means any of the words. A combination counts as one keyword.
 - **2026-10-13** - Alerts show who wrote the message (the name links to the profile when it is public) and the channel title is a link to the channel.
 - **2026-10-10** - Free plan: 2 channels and 50 keywords.
