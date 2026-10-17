@@ -23,7 +23,7 @@
 | Alerts | Free: usually within a few minutes. Pro: usually within seconds. The time is not guaranteed |
 | Languages | English, Russian, Ukrainian |
 | Sources | Public channels and chats (no private channels or DMs) |
-| Data stored | Your Telegram user ID, your channel list, your keywords; a short preview of matched posts for a few days (see Privacy) |
+| Data stored | Your Telegram user ID, your channels and keywords, and a short alert history for your feed (see Privacy) |
 
 ------
 
@@ -116,7 +116,7 @@ On the Free plan alerts usually arrive within a few minutes of a post going live
 No. Matching ignores case and works across English, Russian, and other Unicode scripts.
 
 **Do you store the posts?**
-Not as an archive. Post text is checked against your keywords. For your alerts and the cabinet feed Telescope keeps a short preview of a matched post (up to 255 characters) with the author's name for 7 days, and the delivery log for 14 days; after that it is deleted.
+Not as an archive. Post text is checked against your keywords. Short alert previews are kept for a limited time so your feed works, then deleted. You can remove everything at any time with `/deletedata`.
 
 **How do I delete my data?**
 Send `/deletedata` in the bot - everything tied to your account is removed immediately.
@@ -184,9 +184,11 @@ Built with:
 
 ## Privacy
 
-Telescope stores: your Telegram user ID, your list of channels and your keywords. For alerts and the cabinet feed it also keeps, for a limited time, a short preview of matched posts with the author's name (7 days) and a delivery log (14 days). It does not keep an archive of posts. Use `/deletedata` to remove everything at any time.
+Telescope stores: your Telegram user ID, your list of channels and## Privacy
 
-[Full privacy policy](https://telegra.ph/Politika-konfidencialnosti---Telescope-Bot-05-03)
+Telescope stores your Telegram user ID, your channels and keywords, and a short history of your alerts for a limited time. It does not keep an archive of posts. Use `/deletedata` to remove everything at any time.
+
+e-Bot-05-03)
 
 ------
 
