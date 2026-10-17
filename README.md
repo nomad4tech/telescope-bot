@@ -1,13 +1,9 @@
-# Telescope Bot
+# Telescope
 
-**A free Telegram bot that monitors public channels for your keywords and notifies you the instant a post matches.**
+**Keyword alerts for public Telegram channels and chats. Add the places you follow and the words you care about, and Telescope sends you a signal when they show up.**
 
 [![Telegram](https://img.shields.io/badge/Telegram-@telescope__one__bot-2CA5E0?style=flat&logo=telegram)](https://t.me/telescope_one_bot)
 [![Website](https://img.shields.io/badge/Website-nomad4.tech%2Ftelescope-2196f3?style=flat)](https://nomad4.tech/telescope)
-[![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=flat&logo=openjdk)](https://openjdk.org/)
-[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=flat&logo=springboot)](https://spring.io/projects/spring-boot)
-[![telegrambot4j](https://img.shields.io/badge/lib-telegrambot4j-blue?style=flat)](https://github.com/nomad4tech/telegrambot4j)
-[![heartbeat4j](https://img.shields.io/badge/lib-heartbeat4j-blue?style=flat)](https://github.com/nomad4tech/heartbeat4j)
 [![Status](https://img.shields.io/badge/status-live-brightgreen?style=flat)]()
 
 [Try it now: @telescope_one_bot](https://t.me/telescope_one_bot) · [Website](https://nomad4.tech/telescope)
@@ -20,77 +16,83 @@
 
 | | |
 | --- | --- |
-| Platform | Telegram (works in any Telegram client - iOS, Android, Web, Desktop) |
+| What it is | A free app that lives in Telegram: a bot for setup and alerts, plus a personal web cabinet (installable on your phone) with your feed, statistics and export |
+| Platform | Works in any Telegram client (iOS, Android, Web, Desktop); the cabinet opens in any browser |
 | Price | Free · Pro demo on request (paid plans later) |
-| Free tier limits | 2 channels, 50 keywords per user |
-| Alerts | Usually within a few minutes; Pro is faster |
+| Free plan | 2 channels, 50 keywords per user |
+| Alerts | Free: usually within a few minutes. Pro: usually within seconds. The time is not guaranteed |
 | Languages | English, Russian, Ukrainian |
-| Channel type | Public channels only (no private channels or DMs) |
-| Data stored | Telegram user ID, your channel list, your keywords - no message content |
+| Sources | Public channels and chats (no private channels or DMs) |
+| Data stored | Your Telegram user ID, your channel list, your keywords; a short preview of matched posts for a few days (see Privacy) |
 
 ------
 
-## What is this?
+## What is Telescope?
 
-Telescope is a Telegram bot that watches public channels for you and sends a notification the moment a keyword appears in a new post.
+Telescope follows public Telegram channels and chats for you. When one of your words appears in a new post, it sends you a signal: the word is underlined, and you see the channel, the author and a link to the original post.
 
-Looking for a way to monitor Telegram channels for keywords, track mentions across Telegram, get alerts from public chats, or follow a topic without reading every post yourself? That's exactly what Telescope does.
+Set it up once and get on with your day. Typical jobs: keyword alerts for Telegram channels, tracking mentions of a brand, following a topic, catching a listing or a request before others do.
 
-Set it up once - never miss a relevant post again.
+## How it works
 
-**Use cases:**
+1. **Add the channels and chats you follow** - by `@username` or a `t.me/` link.
+2. **Add your words** - single words, phrases, combinations (`looking + apartment`) and exclusions (`-football`).
+3. **Get a signal** - a message from the bot with the word, the channel, the author and a link. Open the post in one tap.
 
-- Track mentions of your brand, product, or competitor
-- Monitor job postings or apartment listings in niche channels
-- Follow specific topics across news channels
-- Get alerts on keywords in communities you don't want to read manually
-- OSINT / open-source monitoring of public Telegram activity
-- Keep an eye on channels without joining or reading them yourself
+## What people use it for
+
+- **Leads and requests** - be first to answer when someone asks for what you sell
+- **Real estate and rentals** - see a matching listing as soon as it is posted
+- **Deals and marketplaces** - get a signal when the item you want appears
+- **Jobs** - catch new vacancies for your skills before the crowd
+- **Brand mentions** - hear when people talk about your company, product or competitors
+- **Announcements** - follow release notes, launch dates and listings in project channels
+- **Research and news** - follow a topic across public sources without reading every post
 
 ------
 
-- ## Features
+## Features
 
-  - 🔔 **Continuous monitoring** - new posts are checked all the time, alerts usually arrive within a few minutes
+- 🔔 **Always on** - new posts are checked around the clock; alerts usually arrive within a few minutes, and Pro is usually within seconds
 
-  - 🔑 **Smart keyword matching**
-    - Single word -> prefix match (`football` matches `footballer`)
-    - Number -> exact match (`2026` won't match `20261`)
-    - Phrase -> full phrase match (`rent apartment`)
-    - Combination -> all words at once, in any order (`looking + apartment` needs both)
-    - A comma finds any of the words (`football, hockey`), a plus finds all of them
+- 🔑 **Smart keyword matching**
+  - Single word -> prefix match (`football` matches `footballer`)
+  - Number -> exact match (`2026` won't match `20261`)
+  - Phrase -> full phrase match (`rent apartment`)
+  - Combination -> all words at once, in any order (`looking + apartment` needs both)
+  - A comma finds any of the words (`football, hockey`), a plus finds all of them
 
-  - 🚫 **Exclude keywords** - put `-` or `!` before a word (`-football`) to skip posts that contain it, even if another keyword matched
+- 🚫 **Exclude keywords** - put `-` or `!` before a word (`-football`) to skip posts that contain it, even if another keyword matched
 
-  - 📡 **Multiple input formats** - add channels by `@username`, `t.me/` link, or web Telegram URL
+- 📡 **Multiple input formats** - add channels by `@username`, `t.me/` link, or web Telegram URL
 
-    ![Adding a channel in the bot](assets/add_chanel.gif)
+  ![Adding a channel in the bot](assets/add_chanel.gif)
 
-  - 🔑 **Keyword management** - add, view, and remove keywords on the fly; a combination like `looking + apartment` counts as one keyword
+- 🔑 **Keyword management** - add, view, and remove keywords on the fly; a combination like `looking + apartment` counts as one keyword
 
-    ![Add keywords](assets/add_keywords.gif)
+  ![Add keywords](assets/add_keywords.gif)
 
-  - 🖥️ **Personal cabinet** *(Pro demo)* - a web page with your feed, statistics, channels, keywords and export; open it with `/cabinet` (the recording uses demo data)
+- 🖥️ **Personal cabinet** *(Pro demo)* - a web app with your feed, search, statistics, channels, keywords and export; open it with `/cabinet` and install it on your phone (the recording uses demo data)
 
-    ![Personal cabinet: feed, search and statistics](assets/cabinet.gif)
+  ![Personal cabinet: feed, search and statistics](assets/cabinet.gif)
 
-  - 🌐 **Three languages** - English, Russian and Ukrainian
+- 🌐 **Three languages** - English, Russian and Ukrainian
 
-    ![Switching the bot language](assets/language_change.gif)
+  ![Switching the bot language](assets/language_change.gif)
 
-  - 💬 **In-app feedback** - report a bug or leave feedback right from the bot menu, no need to leave the chat
+- 💬 **In-app feedback** - report a bug or leave feedback right from the bot menu, no need to leave the chat
 
-  - 🗑️ **Full data deletion** - `/deletedata` removes everything, no questions asked
+- 🗑️ **Full data deletion** - `/deletedata` removes everything, no questions asked
 
 ------
 
 ## FAQ
 
 **Is there a bot that notifies me when a keyword appears in a Telegram channel?**
-Yes - Telescope does exactly this. Add a channel, add a keyword, get an instant notification when it matches.
+Yes - Telescope does exactly this. Add a channel, add a keyword, and you get an alert when a new post matches.
 
 **How do I track mentions of my brand or product on Telegram?**
-Add the channels you care about and your brand name as a keyword - Telescope keeps checking new posts and notifies you as soon as one matches.
+Add the channels you care about and your brand name as a keyword - Telescope keeps checking new posts and sends you an alert when one matches.
 
 **What's included in the free tier?**
 Up to 2 channels and 50 keywords per user, alerts usually within a few minutes. Pro is available as a free demo on request in the bot: up to 5 channels, unlimited keywords, regular expressions, faster delivery and a personal web cabinet with feed, statistics and export. Paid plans, including integrations with your own apps (Slack, Notion, your own service), will come later.
@@ -108,19 +110,19 @@ Yes - join them with `+`: `looking + apartment` matches only when both words are
 Yes - add exclude keywords to filter out matches you don't want, without having to drop the main keyword entirely.
 
 **How fast are alerts?**
-Alerts usually arrive within a few minutes of a post going live, and Pro is faster; the time is not guaranteed.
+On the Free plan alerts usually arrive within a few minutes of a post going live. On Pro they usually arrive within seconds. The time is not guaranteed and can be longer.
 
 **Are keywords case-sensitive?**
 No. Matching ignores case and works across English, Russian, and other Unicode scripts.
 
 **Do you store the posts?**
-No - only enough to avoid sending you the same match twice. Post text is checked against your keywords and not kept.
+Not as an archive. Post text is checked against your keywords. For your alerts and the cabinet feed Telescope keeps a short preview of a matched post (up to 255 characters) with the author's name for 7 days, and the delivery log for 14 days; after that it is deleted.
 
 **How do I delete my data?**
 Send `/deletedata` in the bot - everything tied to your account is removed immediately.
 
 **Does this work for apartment listings, job postings, or niche marketplace channels?**
-Yes - any use case where you want an instant alert on a keyword in a public channel works: real estate, jobs, deals, brand mentions, news topics, and more.
+Yes - any use case where you want an alert on a keyword in a public channel works: real estate, jobs, deals, brand mentions, news topics, and more.
 
 ------
 
@@ -130,10 +132,10 @@ Yes - any use case where you want an instant alert on a keyword in a public chan
 | ----------------------------------- | ---------------------------- | ----------------------- | ------------------------ |
 | Channels                            | 2                            | 5                       | More                     |
 | Keywords                            | 50                           | Unlimited               | Unlimited                |
-| Alerts                              | Usually within a few minutes | Faster                  | Faster                   |
-| Regular expressions                 | —                            | ✓                       | ✓                        |
+| Alerts                              | Usually within a few minutes | Usually within seconds  | Usually within seconds   |
+| Regular expressions                 | -                            | ✓                       | ✓                        |
 | Cabinet: feed, statistics, export   | Basic                        | ✓                       | ✓                        |
-| Integrations (webhooks, your apps)  | —                            | —                       | ✓                        |
+| Integrations (webhooks, your apps)  | -                            | -                       | ✓                        |
 
 ------
 
@@ -163,6 +165,11 @@ The same list, with older entries, is in the Updates section of the [website](ht
 
 ## Tech
 
+[![Java](https://img.shields.io/badge/Java-17+-ED8B00?style=flat&logo=openjdk)](https://openjdk.org/)
+[![Spring Boot](https://img.shields.io/badge/Spring%20Boot-3.x-6DB33F?style=flat&logo=springboot)](https://spring.io/projects/spring-boot)
+[![telegrambot4j](https://img.shields.io/badge/lib-telegrambot4j-blue?style=flat)](https://github.com/nomad4tech/telegrambot4j)
+[![heartbeat4j](https://img.shields.io/badge/lib-heartbeat4j-blue?style=flat)](https://github.com/nomad4tech/heartbeat4j)
+
 Built with:
 
 - **Java 17** + **Spring Boot**
@@ -177,7 +184,7 @@ Built with:
 
 ## Privacy
 
-The bot stores only: your Telegram user ID, your entered list of channels, and your keywords. No message content is stored. Use `/deletedata` to remove everything at any time.
+Telescope stores: your Telegram user ID, your list of channels and your keywords. For alerts and the cabinet feed it also keeps, for a limited time, a short preview of matched posts with the author's name (7 days) and a delivery log (14 days). It does not keep an archive of posts. Use `/deletedata` to remove everything at any time.
 
 [Full privacy policy](https://telegra.ph/Politika-konfidencialnosti---Telescope-Bot-05-03)
 
