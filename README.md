@@ -4,6 +4,10 @@
 
 [![Telegram](https://img.shields.io/badge/Telegram-@telescope__one__bot-2CA5E0?style=flat&logo=telegram)](https://t.me/telescope_one_bot)
 [![Website](https://img.shields.io/badge/Website-nomad4.tech%2Ftelescope-2196f3?style=flat)](https://nomad4.tech/telescope)
+[![Price](https://img.shields.io/badge/price-free%20to%20start-brightgreen?style=flat)]()
+[![Languages](https://img.shields.io/badge/languages-EN%20%C2%B7%20RU%20%C2%B7%20UK-blue?style=flat)]()
+[![Works on](https://img.shields.io/badge/works%20on-iOS%20%C2%B7%20Android%20%C2%B7%20Web%20%C2%B7%20Desktop-lightgrey?style=flat)]()
+[![Cabinet](https://img.shields.io/badge/web%20cabinet-installable%20app-2196f3?style=flat)]()
 [![Status](https://img.shields.io/badge/status-live-brightgreen?style=flat)]()
 
 [Try it now: @telescope_one_bot](https://t.me/telescope_one_bot) · [Website](https://nomad4.tech/telescope)
@@ -74,7 +78,10 @@ Set it up once and get on with your day. Typical jobs: keyword alerts for Telegr
 
 - 🖥️ **Personal cabinet** *(Pro demo)* - a web app with your feed, search, statistics, channels, keywords and export; open it with `/cabinet` and install it on your phone (the recording uses demo data)
 
-  ![Personal cabinet: feed, search and statistics](assets/cabinet.gif)
+  <p>
+    <img src="assets/cabinet.gif" alt="Personal cabinet on a phone: feed, search and statistics" width="230">
+    <img src="assets/cabinet_desktop.gif" alt="Personal cabinet on a computer: feed, message card, export" width="560">
+  </p>
 
 - 🌐 **Three languages** - English, Russian and Ukrainian
 
