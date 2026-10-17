@@ -12,7 +12,7 @@
 
 [Try it now: @telescope_one_bot](https://t.me/telescope_one_bot) · [Website](https://nomad4.tech/telescope)
 
-![Demo](assets/demo.gif)
+![How an alert looks: the word, the channel, the author and a link to the post; Free usually within a few minutes, Pro within seconds](assets/demo.gif)
 
 ------
 
@@ -64,17 +64,19 @@ Set it up once - never miss a relevant post again.
 
   - 📡 **Multiple input formats** - add channels by `@username`, `t.me/` link, or web Telegram URL
 
-    ![Add channel](assets/add_chanel.gif)
+    ![Adding a channel in the bot](assets/add_chanel.gif)
 
   - 🔑 **Keyword management** - add, view, and remove keywords on the fly; a combination like `looking + apartment` counts as one keyword
 
-  - 🖥️ **Personal cabinet** *(Pro demo)* - a web page with your feed, statistics, channels, keywords and export; open it with `/cabinet`
-
     ![Add keywords](assets/add_keywords.gif)
+
+  - 🖥️ **Personal cabinet** *(Pro demo)* - a web page with your feed, statistics, channels, keywords and export; open it with `/cabinet` (the recording uses demo data)
+
+    ![Personal cabinet: feed, search and statistics](assets/cabinet.gif)
 
   - 🌐 **Three languages** - English, Russian and Ukrainian
 
-    ![Language switch](assets/language_change.gif)
+    ![Switching the bot language](assets/language_change.gif)
 
   - 💬 **In-app feedback** - report a bug or leave feedback right from the bot menu, no need to leave the chat
 
